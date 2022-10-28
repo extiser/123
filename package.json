@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --delay 300ms --exec babel-node index.js",
+    "migrate": "babel-node ./db/migrate.js",
+    "revert": "babel-node ./db/revert.js",
+    "seed_add": "babel-node ./db/seeders/add.js",
+    "seed_delete": "babel-node ./db/seeders/delete.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-list-endpoints": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "momentjs": "^2.0.0",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.23.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "nodemon": "^2.0.20"
+  }
+}

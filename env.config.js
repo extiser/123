@@ -1,0 +1,18 @@
+export default {
+  env: 'dev',
+  PORT: 3001,
+  API_PREFIX: '/api/v1',
+  DB_NAME: 'loyalty',
+  DB_USER: 'root',
+  DB_PASSWORD: 'root',
+  DB_HOST: 'localhost',
+  DB_PORT: 8889,
+  DB_TIMEZONE: '+05:00',
+  DB_LOG: true,
+  SALT_ROUNDS: 10,
+  DEFAULT_ROOT_PASSWORD: '123456',
+  DEFAULT_ROOT_PHONE: '+998909404055',
+  DEFAULT_ROOT_TG: '28079795',
+  JWT_SECRET: 'some_secret_key',
+  JWT_EXPIRED: '72h',
+}
